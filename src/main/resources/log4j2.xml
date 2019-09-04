@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="[%-5level] [%d{dd.MM.yyyy HH:mm:ss}] [%t %c{1}:%L] - %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.vk" level="OFF"/>
+        <Root level="info" additivity="false">
+            <AppenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
